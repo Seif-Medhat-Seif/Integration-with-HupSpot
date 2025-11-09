@@ -1,0 +1,25 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    title= title
+    link(rel="stylesheet", href="/public/css/style.css")
+  body
+    h1 Video Games
+    a(href="/update-cobj") Add/Update this table
+    table
+      thead
+        tr
+          th Name
+          th Publisher
+          th Price
+      tbody
+        if items.length === 0
+          tr
+            td(colspan="3") No records found.
+        else
+          each item in items
+            tr
+              td= item.properties.name || ''
+              td= item.properties.publisher || ''
+              td= item.properties.price || ''

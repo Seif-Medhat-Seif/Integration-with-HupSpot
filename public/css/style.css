@@ -1,0 +1,25 @@
+body{
+  font-family: Georgia, serif;
+  margin: 30px;
+}
+h1{
+  font-size: 48px;
+}
+a{
+  display:inline-block;
+  margin-bottom: 10px;
+  color: #2b5bd7;
+}
+table{
+  border-collapse: collapse;
+  width: 80%;
+}
+th, td{
+  border: 2px solid #ddd;
+  padding: 8px;
+  font-size: 22px;
+}
+th{
+  background: #f9c6cc;
+  font-weight: bold;
+}
